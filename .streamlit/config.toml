@@ -1,0 +1,22 @@
+[theme]
+base = "dark"
+
+font = "IBM Plex Serif:https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&display=swap"
+headingFont = "IBM Plex Serif:https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600;700&display=swap"
+codeFont = "IBM Plex Mono:https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+baseFontSize = 16
+
+[theme.dark]
+primaryColor = "#a78bfa"
+backgroundColor = "#16102e"
+secondaryBackgroundColor = "#1d1640"
+textColor = "#f6f4fd"
+
+[theme.light]
+primaryColor = "#7c3aed"
+backgroundColor = "#faf8fe"
+secondaryBackgroundColor = "#f2eefb"
+textColor = "#1a1330"
+
+[client]
+toolbarMode = "viewer"
