@@ -1299,11 +1299,11 @@ ROLE_PAGES = {
     "Executive": ["Credit Risk Dashboard", "Portfolio Analytics"],
     "Credit Risk Manager": ["Credit Risk Dashboard", "Application Queue",
                             "Underwriting Cases", "Portfolio Analytics"],
-    "Underwriter": ["Application Queue", "Applicant 360", "Underwriting Cases"],
+    "Underwriter": ["Application Queue", "Applicant Section", "Underwriting Cases"],
     "Data Analyst": ["Credit Risk Dashboard", "Portfolio Analytics",
-                     "Application Queue", "Applicant 360"],
+                     "Application Queue", "Applicant Section"],
     "Administrator": ["Credit Risk Dashboard", "Application Queue",
-                      "Applicant 360", "Underwriting Cases",
+                      "Applicant Section", "Underwriting Cases",
                       "Portfolio Analytics", "System Logs"],
 }
 
@@ -1316,7 +1316,7 @@ ROLE_BLURB = {
 }
 
 with st.sidebar:
-    st.markdown(f"### 🏦 {PRODUCT_NAME}")
+    st.markdown(f"### {PRODUCT_NAME}")
     st.caption(PRODUCT_TAGLINE)
     st.markdown("---")
     role = st.selectbox("Signed in as", list(ROLE_PAGES.keys()), index=0)
@@ -1581,11 +1581,11 @@ elif page == "Application Queue":
 
 
 # ==========================================================================
-# Applicant 360
+# Applicant Section
 # ==========================================================================
 
-elif page == "Applicant 360":
-    page_header("Applicant 360",
+elif page == "Applicant Section":
+    page_header("Applicant Section",
                 "Score an application, price it, and record the decision.")
 
     def render_decision(loan_id, probability, row, key_prefix):
@@ -1889,7 +1889,7 @@ elif page == "Underwriting Cases":
 
     if cases.empty:
         st.info("No cases yet. Open one from the Application Queue or from a "
-                "scored application on Applicant 360.")
+                "scored application on Applicant Section.")
     else:
         section("Case pipeline", "Where does the work sit?")
         pipeline = (cases.groupby("status")
