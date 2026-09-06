@@ -320,7 +320,7 @@ def money_exact(amount):
 
 CASE_STATUSES = ["Pending review", "In review", "Approved", "Declined", "Withdrawn"]
 
-UNDERWRITERS = ["Unassigned", "A. Mensah", "B. Okonkwo", "C. Adeyemi", "D. Ncube"]
+UNDERWRITERS = ["Unassigned", "M.K. Miracle", "B.U. Okonkwo", "W.C. yemi", "D.N. Micheal"]
 
 DECLINE_REASONS = [
     "Probability of default above policy limit",
